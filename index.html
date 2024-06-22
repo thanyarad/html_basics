@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanya's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: LavenderBlush;
+        }
+    </style>
+</head>
+<body >
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#Veg">Veg</a></li>
+            <li><a href="#Non-Veg">Non-Veg</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="Home" id="Home">
+            <h1>Welcome to Thanya's Kitchen</h1>
+            <form id="orderForm" action="confirmation.html" method="post">
+                <label for="username">UserName:</label>
+                <input type="text" name="username">
+                <br>
+                <br>
+                <label for="useremail">Email-id:</label>
+                <input type="email" name="useremail">
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password">
+                <br>
+                <br>
+                <label for="birthdate">DOB</label>
+                <input type="date" name="birthdate">
+                <br><br>
+                <label for="foodoption">Select your Fav Dish</label>
+                <select type="foodoption" name="foodoption">
+                    <option value="Select">Default</option>
+                    <option value="Biryani">Kitchen Special Biryani's</option>
+                    <option value="Momos">Momos</option>
+                    <optgroup label="Beverages">
+                        <option value="Soft">Soft Drink</option>
+                        <option value="Fresh">Fresh Juice</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <label for="imageoffood">You can upload your Fav Dish</label>
+                <input type="file" name="imageoffood">
+                <br>
+                <br>
+                <label for="nooffood">Number of food order</label>
+                <input type="number" name="nooffood">
+                <br><br>
+                <label for="prefood">Biryani</label>
+                <input type="radio" name="prefood">
+                <br>
+                <label for="prefood">Momos</label>
+                <input type="radio" name="prefood">
+                <br>
+                <label for="prefood">Beverages</label>
+                <input type="radio" name="prefood">
+                <br><br>
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+        <section class="AboutUs" id="AboutUs">
+            <h2><u>About Us - Thanya's Kitchen</u></h2>
+            <p>
+                Welcome to Thanya's Kitchen, where every meal is a culinary journey through the flavors of Asia. Our story began with a passion for cooking and a dream to bring the rich and diverse tastes of Asian cuisine to your table. Thanya, our founder and head chef, combines her Thai heritage with a love for exploring different culinary traditions to create a unique dining experience.
+            </p>
+            <h4>Our Philosophy</h4>
+            <p>At Thanya's Kitchen, we believe in the power of food to bring people together. Our mission is to share the warmth and joy of Asian culture through our carefully crafted dishes, made with the freshest ingredients and a touch of love. We strive to create an inviting atmosphere where you can savor the rich, complex flavors of Asia in every bite.</p>
+            <h4>Fresh Ingredients, Authentic Flavors</h4>
+            <p>
+                We take pride in sourcing the highest quality ingredients, both locally and imported from across Asia. Fresh herbs, aromatic spices, and premium meats and seafood are the foundation of our dishes, allowing us to deliver an authentic dining experience. Our commitment to quality ensures that every meal is not only delicious but also wholesome and nutritious.
+            </p>
+        </section>
+        <section class="Veg" id="Veg">
+            <h1><u>Veg Menu</u></h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dish</th>
+                        <th>Rate</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Veg Biryani</td>
+                        <td>100</td>
+                        <td><input type="number" name="vegBiryaniQty"></td>
+                    </tr>
+                    <tr>
+                        <td>Veg Momos</td>
+                        <td>50</td>
+                        <td><input type="number" name="vegMomosQty"></td>
+                    </tr>
+                    <tr>
+                        <td>Paneer Biryani</td>
+                        <td>120</td>
+                        <td><input type="number" name="paneerBiryaniQty"></td>
+                    </tr>
+                    <tr>
+                        <td>Paneer Momos</td>
+                        <td>60</td>
+                        <td><input type="number" name="paneerMomosQty"></td>
+                    </tr>
+                    <tr>
+                        <td>Paneer Tikka Masala</td>
+                        <td>150</td>
+                        <td><input type="number" name="paneerTikkaMasalaQty"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="Non-Veg" id="Non-Veg">
+            <h2><u>Non-veg Menu</u></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dish</th>
+                        <th>Rate</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chicken Biryani</td>
+                        <td>150</td>
+                        <td><input type="number" name="chickenBiryaniQty"></td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Momos</td>
+                        <td>70</td>
+                        <td><input type="number" name="chickenMomosQty"></td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Soup</td>
+                        <td>80</td>
+                        <td><input type="number" name="chickenSoupQty"></td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Tikka Masala</td>
+                        <td>180</td>
+                        <td><input type="number" name="chickenTikkaMasalaQty"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </section>
+        <section class="Contact" id="Contact">
+            <h2><u>Contact US</u></h2>
+            <p>
+                Our team is a family of passionate individuals who share Thanya's dedication to excellence. From our skilled chefs to our friendly servers, everyone at Thanya's Kitchen is committed to providing you with an exceptional dining experience. We are proud of our team's hard work and dedication, which shines through in every aspect of our restaurant.<br>
+
+                <b>Maryhill View, Mangalore</b><br>
+                <b><u>thanyaskitchen@gmail.com</u></b><br>
+                <b>+91 8951620447</b>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
